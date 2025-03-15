@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormDemo2</title>
+</head>
+
+<body>
+    <form oninput="showrange.value = quantity.value; textOutput.value = fname.value">
+        <input type="text" name="fname" id="fname" placeholder="First Name"><br>
+
+        This is output: <output name="text" id="textOutput"></output><br>
+
+        <input type="date" name="mydate"><br>
+        <input type="time" name="time"><br>
+        <input type="datetime-local" name="datetime"><br>
+        <input type="number" name="number" placeholder="Enter a number"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="file" name="file"><br>
+        <input type="search" name="search" placeholder="Search here"><br>
+        <input type="hidden" name="hiddenField"><br>
+        <input type="url" name="url" placeholder="URL"><br>
+
+        <input type="range" name="quantity" id="quantity" min="1" max="10"><br>
+        Selected Quantity: <output name="showrange" id="showrange"></output>
+    </form>
+</body>
+
+</html>
